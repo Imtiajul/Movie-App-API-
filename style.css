@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: rgba(39, 39, 121, 0.767);
+    --secondary-color: rgb(84 84 182 / 77%);
+}
+
+body {
+    background-color: rgb(23 23 27);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #bebcbc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(27 27 73 / 77%);
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid #bebcbc;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 0.4rem 2rem;
+    color: #fff;
+}
+
+.search placeholder {
+    color: #bebcbc;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 300px;
+    margin: 1.3rem;
+    background-color: #121116cc;
+    box-shadow: 0px 0px 10px 5px rgb(75 75 75 / 38%);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.movie-info span.green {
+    color: lightgreen;
+}
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: red;
+}
+.movie-poster {
+    position: relative;
+    overflow: hidden;
+}
+.overview {
+    background-color: #29294d;
+    color: #ffffff;
+    padding: 2rem;
+    max-height: 100%;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+.movie-content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.movie-content .top .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    flex-grow: 1;
+    color: #ffffff;
+}
+.movie-content .top .title a {
+    color: #ffffff;
+    transition: .5s ease;
+    text-decoration: none;
+}
+.movie-content .top .date {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.movie-content .bottom ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.movie-content .bottom ul li .quality {
+    /* border: 2px solid #fff; */
+    padding: 5px 10px;
+    line-height: 1;
+    font-weight: 700;
+	font-size: 11px;
+    text-transform: uppercase;
+}
+.movie-content .bottom ul li {
+	display: flex;
+	align-items: center;
+}
+.movie-content .bottom ul li .rating {
+	margin-left: 15px;
+}
+.movie-content .bottom ul li > span {
+	color: #bcbcbc;
+	font-size: 12px;
+}
+.movie-content .bottom ul li > span i {
+	margin-right: 5px;
+}
+.movie-content {
+    padding: 10px;
+}
+.navbar-wrap > ul > li.active > a, .navbar-wrap > ul > li:hover > a, .mobile-menu .navigation li.active > a, .header-lang form .icon, .banner-content .sub-title, .banner-content .title > span, .banner-meta ul li.release-time > span > i, .banner-meta ul li.category > a:hover, .section-title .sub-title, .movie-content .top .date, .movie-content .bottom ul li .quality, .movie-content .bottom ul li > span i, .movie-content .top .title a:hover, .ucm-active .owl-nav button:hover, .ucm-active-two .owl-nav button:hover, .tr-movie-menu-active button.active, .footer-menu nav .navigation li:hover > a, .quick-link-list ul li a:hover, .footer-social ul li a:hover, .copyright-text > p > a, .mobile-menu .social-links li a:hover, .header-top-link .quick-link li a:hover, .header-top-link .header-social li a:hover, .header-top-subs > p > span, .movie-item-two .movie-content .title a:hover, .movie-content-bottom ul li.tag a:hover, .breadcrumb-content .breadcrumb li a, .breadcrumb-content .title > span {
+    color: #e4d804;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  
+.sort_item {
+  background-color: #bb262600;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+}
+#sort_by {
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(221 221 221);
+  padding: 5px;
+  color: #29294d;
+}
+#sort_by:focus {
+  outline: none;
+}
+option,
+option.selected {
+  font-size: 14px;
+  font-weight: bold;
+}
+option.selected {
+  color: #241770;
+  font-weight: bold;
+}
+.btn.btn-action {
+    padding: 7px;
+    width: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .2s all ease;
+    outline: none;
+    border: none;
+}
+.btn.btn-action:hover {
+    background-color: #ffffff;
+    outline:none;
+}
+.btn.btn-action:active {
+    transform: translateY(-1px);
+}

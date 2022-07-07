@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>The Movie App</h1>
+        <div class="sort_item">
+            <label for="sort_by">Sort by: </label>
+            <select name="sort_by" id="sort_by">
+              <option value="revenue.asc" class="revenue_asc">Revenue Ascending</option>
+              <option value="popularity.asc" class="popularity_asc">
+                Popularity Ascending
+              </option>
+              <option value="popularity.desc" class="popularity_desc">
+                Popularity Descending
+              </option>
+    
+              <option value="release_date.asc" class="release_date_asc">
+                Release Date Ascending
+              </option>
+    
+              <option value="vote_count.desc" class="vote_count_desc">
+                Vote Count Descending
+              </option>
+              <option value="original_title.desc" class="original_title_desc">
+                Original Title Descending
+              </option>
+            </select>
+            <button class="btn btn-action">Action</button>
+          </div>
+        <form>
+            <input type="text" id="search" placeholder="Search..." class="search" />
+        </form>
+    </header>
+    <main>
+        <div class="main">
+            <!-- <div class="movie">
+
+        </div>
+            <div class="movie-poster"> <img
+                    src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/108b520c55e3c9760f77a06110d6a73b_480x.progressive.jpg?v=1573652543"
+                    alt="poster">
+                <div class="overview">
+                    <h3>Overview</h3>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore iure deserunt nisi maiores commodi cum.
+                </div>
+            </div>
+            <div class="movie-content">
+                <div class="top">
+                    <h5 class="title"><a href="">The Avengers</a></h5>
+                    <span class="date">2021</span>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li><span class="quality">4k</span></li>
+                        <li>
+                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
+                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <ul class="pagination-list">
+        
+    </ul>
+    <script src="./app.js"></script>
+</body>
+
+</html>
